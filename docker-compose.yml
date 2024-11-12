@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:13
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: expired
+      POSTGRES_DB: Project
+    ports:
+      - "5433:5432"
+
+  web:
+    build: .
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
