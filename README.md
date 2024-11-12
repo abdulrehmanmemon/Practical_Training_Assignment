@@ -96,4 +96,10 @@ curl -X DELETE "http://127.0.0.1:8000/users/1" -H "Authorization: Bearer your_ac
 Endpoint: GET /users
 curl -X GET "http://127.0.0.1:8000/users" -H "Authorization: Bearer your_access_token"
 
+**Note** the table "user" is created) in case the database doesn't have it, and insert an admin user. Here are the credentials:
+
+**Username: arehman
+Password: arehman**
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
 by Abdul Rehman
